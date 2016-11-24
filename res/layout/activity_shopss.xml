@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loadmore_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height" >
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity__margin_top"
+            android:src="@drawable/returnnn" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="详情"
+            android:textSize="@dimen/large_textsize" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/jianxi" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp" >
+
+                <com.sun.shoppingmall.customview.CustomViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" >
+                </com.sun.shoppingmall.customview.CustomViewPager>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:gravity="bottom|right" >
+
+                    <TextView
+                        android:id="@+id/number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/activity__margin_top"
+                        android:layout_marginTop="@dimen/activity__margin_bottom"
+                        android:text="/4" />
+
+                    <TextView
+                        android:id="@+id/numbers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/number"
+                        android:text="1"
+                        android:textColor="#F19351" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/jianxi" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity__margin_top"
+                android:layout_marginTop="@dimen/activity__margin_top" 
+                android:text="以旧换新"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity__margin_top"
+                android:layout_marginTop="@dimen/activity__margin_top"
+                android:text="格力清河北路店"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity__margin_top"
+                android:layout_marginTop="@dimen/activity__margin_top"
+                android:text="截止时间：2016-08-08"
+                android:textColor="@color/text_sizes" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="@dimen/activity__margin_top"
+                android:background="@color/jianxi" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity__margin_top" >
+
+                <TextView
+                    android:id="@+id/shopname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:text="【格力清河北路店】" />
+
+                <ImageView
+                    android:id="@+id/qq"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity__margin_top"
+                    android:layout_toRightOf="@+id/shopname"
+                    android:src="@drawable/qq" />
+
+                <ImageView
+                    android:id="@+id/phone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity__margin_top"
+                    android:layout_toRightOf="@+id/qq"
+                    android:src="@drawable/phone" />
+
+                <TextView
+                    android:id="@+id/shopin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/activity__margin_top"
+                    android:background="@drawable/text_shape"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="@dimen/activity__margin_bottom"
+                    android:paddingRight="@dimen/activity__margin_bottom"
+                    android:paddingTop="3dp"
+                    android:text="进入店铺"
+                    android:textColor="#F19351" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/jianxi"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/focusbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableTop="@drawable/focus_selector"
+                android:paddingTop="@dimen/activity__margin_bottom"
+                android:text="关注"
+                android:textSize="@dimen/middles_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/dianzhanbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/dianzhan_selector"
+                android:paddingTop="@dimen/activity__margin_bottom"
+                android:text="点赞"
+                android:textSize="@dimen/middles_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/sharebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/share_selector"
+                android:paddingTop="@dimen/activity__margin_bottom"
+                android:text="分享"
+                android:textSize="@dimen/middles_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/pingbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/pingjia_selector"
+                android:paddingTop="@dimen/activity__margin_bottom"
+                android:text="评论"
+                android:textSize="@dimen/middles_textsize" />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="立即咨询"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_textsize" />
+    </LinearLayout>
+
+</LinearLayout>

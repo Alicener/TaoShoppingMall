@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_background_jianxi"
+    android:orientation="vertical" >
+    
+    <com.sun.shoppingmall.customview.Title
+        android:layout_width="match_parent"
+    	android:layout_height="50dp" >
+        
+    </com.sun.shoppingmall.customview.Title>
+    <View 
+        android:layout_width="match_parent"
+    	android:layout_height="1dp"
+    	android:background="@color/my_background_jianxi"
+        />
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        >
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="vertical"
+            >
+            
+           <RelativeLayout
+            android:id="@+id/msg_relaimg"
+	        android:layout_width="match_parent"
+	        android:layout_height="100dp"
+	        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="头像" />
+        <View 
+        android:layout_width="match_parent"
+    	android:layout_height="1dp"
+    	android:background="@color/my_background_jianxi"
+    	android:layout_alignParentBottom="true"
+    	android:layout_marginLeft="10dp"
+        />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:src="@drawable/touxiang" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/msg_rela1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+        
+        <View 
+        android:layout_width="match_parent"
+    	android:layout_height="1dp"
+    	android:background="@color/my_background_jianxi"
+    	android:layout_alignParentBottom="true"
+    	android:layout_marginLeft="10dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="用户名" />
+
+        <TextView
+            android:id="@+id/msg_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#929397"
+            />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+        
+        <View 
+        android:layout_width="match_parent"
+    	android:layout_height="1dp"
+    	android:background="@color/my_background_jianxi"
+    	android:layout_alignParentBottom="true"
+    	android:layout_marginLeft="10dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="邮箱" />
+
+        <TextView
+            android:id="@+id/msg_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#929397"
+            />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+        
+        <View 
+        android:layout_width="match_parent"
+    	android:layout_height="1dp"
+    	android:background="@color/my_background_jianxi"
+    	android:layout_alignParentBottom="true"
+    	android:layout_marginLeft="10dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="手机号" />
+
+        <TextView
+            android:id="@+id/msg_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#929397"
+            />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+        
+        <View 
+        android:layout_width="match_parent"
+    	android:layout_height="1dp"
+    	android:background="@color/my_background_jianxi"
+    	android:layout_alignParentBottom="true"
+    	android:layout_marginLeft="10dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="姓名" />
+
+        <TextView
+            android:id="@+id/msg_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#929397"
+             />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/msg_relasex"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+        
+        <View 
+        android:layout_width="match_parent"
+    	android:layout_height="1dp"
+    	android:background="@color/my_background_jianxi"
+    	android:layout_alignParentBottom="true"
+    	android:layout_marginLeft="10dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="性别" />
+
+        <TextView
+            android:id="@+id/msg_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#929397"
+             />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/msg_relabirthday"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+        
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="生日" />
+
+        <TextView
+            android:id="@+id/msg_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#929397"
+             />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+	    android:id="@+id/setrela3"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp" 
+	    android:background="@color/white"
+	    android:layout_marginTop="10dp" >
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="10dp"
+		    android:textSize="18dp"
+		    android:text="账户安全" />
+
+		<ImageView
+		    
+		    android:layout_width="20dp"
+		    android:layout_height="20dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="20dp"
+		    android:src="@drawable/yjt" />
+		<View 
+		    android:layout_width="match_parent"
+	    	android:layout_height="1dp" 
+	    	android:background="@color/my_background_jianxi"
+	    	android:layout_marginLeft="10dp"
+	    	android:layout_alignParentBottom="true"
+		    />
+	</RelativeLayout>
+	
+    <TextView
+        android:id="@+id/out"
+	    android:layout_margin="10dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:gravity="center"
+	    android:background="@drawable/red_tv"
+	    android:textColor="@color/white"
+	    android:layout_marginTop="40dp"
+	    android:text="退出当前账户" />
+            
+        </LinearLayout>
+        
+    </ScrollView>
+
+
+</LinearLayout>

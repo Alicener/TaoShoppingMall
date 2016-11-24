@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_background_jianxi"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_height="140dp" >
+
+        <TextView
+            android:id="@+id/tv_ticket_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/red"
+             />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_ticket_name"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textcolor"
+            android:textSize="14dp"
+            android:text="线上使用" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_alignLeft="@+id/textView2"
+            android:textColor="@color/textcolor"
+            android:layout_marginBottom="5dp"
+            android:textSize="14dp"
+            android:text="限平台" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_ticket_name"
+            android:layout_below="@+id/tv_ticket_name"
+            android:textColor="@color/red"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="¥" />
+
+        <TextView
+            android:id="@+id/ticket_money"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:textColor="@color/red"
+            android:gravity="bottom"
+            android:textSize="20dp"
+             />
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ticket_money"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="170dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/ticket_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignLeft="@+id/tv_shop_name"
+            android:layout_marginLeft="25dp"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+</LinearLayout>

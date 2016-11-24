@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_background_jianxi"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/shpe1"
+        android:layout_height="100dp" >
+        
+        <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/my_background_jianxi"
+        android:layout_marginTop="40dp"
+        />
+
+        <TextView
+            android:id="@+id/update_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="#929397"
+            android:text="有新版本，请更新" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="#007AFF"
+            android:text="确定" />
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/update_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shpe1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textColor="#007AFF"
+        android:text="取消" />
+
+</LinearLayout>

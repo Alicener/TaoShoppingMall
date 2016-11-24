@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/bg_Gray" />
+
+    <LinearLayout
+        android:id="@+id/orderuseless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_White"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:clickable="false"
+            android:text="智能排序"
+            android:textSize="@dimen/middles_textsize" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/bg_Gray" />
+
+    <LinearLayout
+        android:id="@+id/orderhigh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_White"
+        android:padding="10dip" >
+
+        <TextView  android:id="@+id/gaodi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:clickable="false"
+            android:text="离我最近"
+            android:textSize="@dimen/middles_textsize"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/bg_Gray" />
+
+    <LinearLayout
+        android:id="@+id/orderlow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_White"
+        android:padding="10dip" >
+
+        <TextView   android:id="@+id/digao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:clickable="false"
+            android:text="好评优先"
+            android:textSize="@dimen/middles_textsize" />
+    </LinearLayout>
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/bg_Gray" />
+ <LinearLayout
+        android:id="@+id/renqi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_White"
+        android:padding="10dip" >
+
+        <TextView   android:id="@+id/ren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:clickable="false"
+            android:text="人气最高"
+            android:textSize="@dimen/middles_textsize" />
+    </LinearLayout>
+</LinearLayout>

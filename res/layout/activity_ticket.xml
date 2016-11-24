@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_background_jianxi"
+    android:orientation="vertical" >
+    
+    <com.sun.shoppingmall.customview.Title
+        android:layout_width="match_parent"
+    	android:layout_height="50dp" >
+        
+    </com.sun.shoppingmall.customview.Title>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_yhq"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="优惠券" />
+
+        <TextView
+            android:id="@+id/tv_mhq"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="满惠券" />
+
+    </LinearLayout>
+    
+    <android.support.v4.view.ViewPager
+          android:id="@+id/viewpagerticket"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" 
+          android:background="@color/my_background_jianxi"
+          >
+       </android.support.v4.view.ViewPager>
+    
+</LinearLayout>

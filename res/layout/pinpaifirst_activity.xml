@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.sun.taoshoppingmalls.MainActivity" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_header" />
+
+    <com.sun.shoppingmall.pullable.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/refresh_head" />
+
+        <com.sun.shoppingmall.pullable.PullableScrollViews
+            android:id="@+id/listview_placemore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:paddingBottom="8dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_largeheight"
+                    android:background="@color/red"
+                    android:gravity="center"
+                    android:text="济南电信"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normal_textsize" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tupian" />
+
+                <LinearLayout
+                    android:id="@+id/childView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_White"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="3dip"
+                    android:paddingRight="3dip"
+                    android:paddingTop="10dip"
+                    android:tag="sticky" >
+
+                    <LinearLayout
+                        android:id="@+id/coupon_nearby01"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:id="@+id/tv1ssssbb01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:text="我的活动"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/middles_textsize" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="20dip"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dip"
+                        android:background="#9E9E9E" />
+
+                    <LinearLayout
+                        android:id="@+id/coupon_nearby"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:id="@+id/tv1ssssbb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:text="我的品牌城"
+                                android:textSize="@dimen/middles_textsize" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity__margin_bottom"
+                    android:background="@color/background" />
+
+                <com.sun.shoppingmall.customview.MyListView
+                    android:id="@+id/listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#19000000"
+                    android:dividerHeight="4dp"
+                    android:gravity="center_vertical" >
+                </com.sun.shoppingmall.customview.MyListView>
+            </LinearLayout>
+        </com.sun.shoppingmall.pullable.PullableScrollViews>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/load_more" />
+    </com.sun.shoppingmall.pullable.PullToRefreshLayout>
+
+</LinearLayout>

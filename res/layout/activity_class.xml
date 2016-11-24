@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/index_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="12dip"
+        android:paddingLeft="13dip"
+        android:paddingRight="30dip"
+        android:paddingTop="12dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="济南"
+            android:textColor="@color/bg_White"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/class_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dip"
+            android:layout_weight="1"
+            android:hint="搜索商城商品"
+            android:padding="8dip"
+            android:textColor="@color/bg_Gray_light"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bg_Gray" >
+
+            <ListView
+                android:id="@+id/goodsClass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/bg_White"
+                android:dividerHeight="10dip"
+                android:drawSelectorOnTop="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/tv_White" >
+
+            <ListView               
+                android:id="@+id/smallgoodsClass"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

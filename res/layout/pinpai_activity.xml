@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.sun.taoshoppingmalls.MainActivity" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_header" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_normalheight"
+                android:background="#00A0E9"
+                android:gravity="center"
+                android:text="品牌城"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_textsize" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/tupian" />
+
+            <LinearLayout
+                android:id="@+id/toprela"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/activity__margin_top"
+                android:layout_marginTop="@dimen/activity__margin_top"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/searchView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_shape1"
+                    android:drawableLeft="@drawable/search2x"
+                    android:hint="搜索品牌"
+                    android:paddingRight="3dp"
+                    android:paddingStart="3dp"
+                    android:textColorHint="@color/edittext_hint"
+                    android:textSize="@dimen/normal_textsize" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/red"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="搜索"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="@null" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/jianxi" 
+                    android:orientation="vertical">
+			<View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/jianxi" />
+                    <GridView
+                        android:id="@+id/gridview"
+                        android:layout_width="1500dp"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="1dp"
+                        android:background="@color/jianxi"
+                        android:numColumns="26" >
+                    </GridView>
+                    <View
+                android:layout_width="match_parent"
+                android:layout_height="0.11dp"
+                android:background="@color/jianxi" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <com.sun.shoppingmall.customview.CustomGridView
+                android:id="@+id/gridviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="0.1dp"
+                android:numColumns="3"
+                android:verticalSpacing="3dp" >
+            </com.sun.shoppingmall.customview.CustomGridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/jianxi" />
+
+            <com.sun.shoppingmall.customview.MyListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="3dp"
+                android:numColumns="3"
+                android:verticalSpacing="3dp" >
+            </com.sun.shoppingmall.customview.MyListView>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

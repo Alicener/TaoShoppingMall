@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    tools:context="com.chu.taoshoppingmall.MainActivity" >
+	<LinearLayout android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone"
+	    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity__margin_bottom"
+        android:layout_marginLeft="@dimen/activity__margin_top"
+        android:text="暑假大促"
+        android:textColor="#19B1AB" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity__margin_top"
+        android:text="乐乐趣图书" />
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity__margin_top"
+        android:text="¥88.99" />
+</LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="@dimen/activity__margin_top"
+        android:layout_marginRight="@dimen/activity__margin_top"
+        android:layout_marginTop="@dimen/activity__margin_bottom"
+        android:scaleType="fitXY"
+        android:src="@drawable/ceshi" />
+
+</LinearLayout>

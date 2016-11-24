@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sun.shoppingmall.MainActivity" >
+ <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:gravity="bottom"
+        android:background="#E5E5E5"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/mainbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingTop="@dimen/activity__margin_bottom"
+            android:drawableTop="@drawable/btn_main_selector"
+            android:textSize="@dimen/middles_textsize"
+            android:text="主页" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/catebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/btn_cate_selector"
+             android:paddingTop="@dimen/activity__margin_bottom"
+            android:text="分类"
+            android:textSize="@dimen/middles_textsize" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/messagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:visibility="gone"
+            android:drawableTop="@drawable/btn_message_selector"
+             android:paddingTop="@dimen/activity__margin_bottom"
+            android:text="消息"
+            android:textSize="@dimen/middles_textsize" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/cartbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/btn_my_selector"
+             android:paddingTop="@dimen/activity__margin_bottom"
+            android:text="购物车"
+            android:textSize="@dimen/middles_textsize" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+        <Button android:id="@+id/minebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/btn_mine_selector"
+             android:paddingTop="@dimen/activity__margin_bottom"
+            android:text="我的"
+            android:textSize="@dimen/middles_textsize" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.chu.taoshoppingmall.MainActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity__margin_bottom"
+        android:gravity="center"
+        android:text="暑假大促"
+        android:textColor="#19B1AB" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity__margin_bottom"
+        android:gravity="center"
+        android:text="乐乐趣图书" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="@dimen/activity__margin_top"
+        android:layout_marginRight="@dimen/activity__margin_top"
+        android:layout_marginTop="@dimen/activity__margin_bottom"
+        android:scaleType="fitXY"
+        android:src="@drawable/ceshi" />
+
+</LinearLayout>

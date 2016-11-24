@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/con_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ceshi" />
+
+        <TextView
+            android:id="@+id/con_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/con_img"
+            android:layout_toRightOf="@+id/con_img"
+            />
+
+        <TextView
+            android:id="@+id/con_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/con_title"
+            android:layout_centerVertical="true"
+            android:textColor="@color/red"
+             />
+
+        <TextView
+            android:id="@+id/con_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/con_img"
+            android:layout_toRightOf="@+id/con_img"
+            android:textColor="@color/gray"
+             />
+
+        <TextView
+            android:id="@+id/con_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/con_position"
+            android:layout_alignBottom="@+id/con_position"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="删除" />
+
+    </RelativeLayout>
+
+</LinearLayout>

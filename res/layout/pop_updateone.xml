@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_background_jianxi"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/shpe1"
+        android:layout_height="100dp" >
+        
+
+        <TextView
+            android:id="@+id/update_sure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textColor="#929397"
+            android:text="最高版本，无需更新" />
+
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/update_cancelone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shpe1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textColor="#007AFF"
+        android:text="取消" />
+
+</LinearLayout>

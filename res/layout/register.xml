@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:layout_gravity="center"
+        android:background="@color/top_background" >
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_textsize" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:text="手  机  号：" />
+        
+        <EditText android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/activity__margin_top"
+            android:layout_toRightOf="@+id/textView1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_shape1" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+        
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:text="验  证  码：" />
+
+        <TextView
+            android:id="@+id/second"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="12dp"
+            android:gravity="center"
+            />
+        
+        <EditText android:id="@+id/yanzhengma"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/activity__margin_top"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toLeftOf="@+id/second"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_shape1" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:text="登录密码：" />
+        
+        <EditText android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/activity__margin_top"
+            android:layout_toRightOf="@+id/textView4"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_shape1" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+             />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/checkBox1"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:text="我已阅读并同意" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_centerVertical="true"
+            android:textColor="@color/blue"
+            android:text="《用户注册协议》" />
+        
+    </RelativeLayout>
+    
+    <Button  android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/activity__margin_top"
+        android:layout_marginRight="@dimen/activity__margin_top"
+        android:layout_marginTop="@dimen/layout_smallheight"
+        android:background="@color/top_background"
+        android:gravity="center"
+        android:text="立即注册"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_textsize" />
+
+</LinearLayout>
